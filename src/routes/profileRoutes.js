@@ -20,7 +20,7 @@ const verifyToken = require("../middleware/authMiddleware");
  *             properties:
  *               name:
  *                 type: string
- *                 example: Admin T-Mart
+ *                 example: User Baru
  *               email:
  *                 type: string
  *                 example: user1@example.com

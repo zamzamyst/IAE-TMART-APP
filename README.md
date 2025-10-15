@@ -164,6 +164,8 @@ Selain melalui Postman, Anda juga bisa menjalankan proyek T-Mart ini melalui Swa
     - Proses login telah berhasil dengan response `200 OK` dan output `access_token`
     - Lihat decode JWT melalui Console atau https://www.jwt.io/ (Opsional) 
 
+    ![Screenshot Postman](assets/swagger-skenario-login-1.png)
+
 2. Skenario 2 (Email sesuai & Password salah)
     - Buka URL http://localhost:5001/api-docs (sesuaikan dengan PORT anda)
     - Pilih opsi request POST /auth/login
@@ -173,6 +175,8 @@ Selain melalui Postman, Anda juga bisa menjalankan proyek T-Mart ini melalui Swa
     - Klik tombol `Execute`
     - Proses login gagal, dengan response `401 Unauthorized` beserta error message-nya
 
+    ![Screenshot Postman](assets/swagger-skenario-login-2.png)
+
 3. Skenario 3 (Email salah & Password sesuai)
     - Buka URL http://localhost:5001/api-docs (sesuaikan dengan PORT anda)
     - Pilih opsi request POST /auth/login
@@ -181,6 +185,8 @@ Selain melalui Postman, Anda juga bisa menjalankan proyek T-Mart ini melalui Swa
     - Isi `password` dengan `pass123`
     - Klik tombol `Execute`
     - Proses login gagal, dengan response `404 Not Found` beserta error message-nya
+
+    ![Screenshot Postman](assets/swagger-skenario-login-3.png)
 
 #### Skenario Edit Profile
 1. Skenario 1 (Token valid)
@@ -193,6 +199,8 @@ Selain melalui Postman, Anda juga bisa menjalankan proyek T-Mart ini melalui Swa
     - Klik tombol `Execute`
     - Profil berhasil diperbarui, dengan response `200 OK` beserta message dan data-nya
 
+    ![Screenshot Postman](assets/swagger-skenario-profile-1.png)
+
 2. Skenario 2 (Token Tidak Valid)
     - Salin `access_token` yang anda dapatkan saat berhasil Login
     - Klik tombol `Authorize`
@@ -202,6 +210,8 @@ Selain melalui Postman, Anda juga bisa menjalankan proyek T-Mart ini melalui Swa
     - Isi `name` dengan nama baru yang diinginkan, misal `Nama Baru`
     - Klik tombol `Execute`
     - Profil gagal diperbarui, dengan response `401 Unauthorized` beserta message error-nya
+
+    ![Screenshot Postman](assets/swagger-skenario-profile-2.png)
 
 3. Skenario 3 (Token Expired)
     - Salin `access_token` yang anda dapatkan saat berhasil Login
@@ -213,6 +223,8 @@ Selain melalui Postman, Anda juga bisa menjalankan proyek T-Mart ini melalui Swa
     - Isi `name` dengan nama baru yang diinginkan, misal `Nama Baru`
     - Klik tombol `Execute`
     - Profil gagal diperbarui, dengan response `401 Unauthorized` beserta message error-nya
+
+    ![Screenshot Postman](assets/swagger-skenario-profile-3.png)
     
 #### Skenario Lihat Daftar Menu
 1. Skenario 1 (Sukses menampilkan Daftar Menu)
@@ -220,6 +232,8 @@ Selain melalui Postman, Anda juga bisa menjalankan proyek T-Mart ini melalui Swa
     - Pilih opsi request GET /items
     - Klik tombol `Try it out`
     - Daftar Menu berhasil ditampilkan, dengan response `200 OK` beserta message dan data-nya
+
+    ![Screenshot Postman](assets/swagger-skenario-items-1.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
