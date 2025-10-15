@@ -106,6 +106,8 @@ Ada beberapa skenario yang harus anda lakukan pada proyek T-Mart ini (sesuai ins
     - Jalankan request
     - Profil berhasil diperbarui, dengan response `200 OK` beserta message dan data-nya
 
+    ![Screenshot Postman](assets/skenario-profile-1.png)
+
 2. Skenario 2 (Token Tidak Valid)
     - Salin `access_token` yang anda dapatkan saat berhasil Login
     - Buka request `PUT` yang bernama `Edit Profile`
@@ -118,6 +120,8 @@ Ada beberapa skenario yang harus anda lakukan pada proyek T-Mart ini (sesuai ins
     - Isi `name` dengan nama baru yang diinginkan, misal `Nama Baru`
     - Jalankan request
     - Profil gagal diperbarui, dengan response `403 Forbidden` beserta message error-nya
+
+    ![Screenshot Postman](assets/skenario-profile-2.png)
 
 3. Skenario 3 (Token Expired)
     - Salin `access_token` yang anda dapatkan saat berhasil Login
@@ -133,12 +137,16 @@ Ada beberapa skenario yang harus anda lakukan pada proyek T-Mart ini (sesuai ins
     - Jalankan request
     - Profil gagal diperbarui, dengan response `401 Unauthorized` beserta message error-nya
 
+    ![Screenshot Postman](assets/skenario-profile-3.png)
+
 #### Skenario Lihat Daftar Menu
 1. Skenario 1 (Sukses menampilkan Daftar Menu)
     - Buka request `GET` yang bernama `Lihat Menu`
     - Sesuaikan URL dengan PORT milik anda
     - Jalankan request
     - Daftar Menu berhasil ditampilkan, dengan response `200 OK` beserta message dan data-nya
+
+    ![Screenshot Postman](assets/skenario-items-1.png)
 
 
 ### Cara Menjalankan Program melalui SwaggerUI
