@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const { login } = require('../controllers/authController');
+const { login } = require("../controllers/authController");
 
 /**
  * @swagger
@@ -20,13 +20,13 @@ const { login } = require('../controllers/authController');
  *             properties:
  *               email:
  *                 type: string
- *                 example: admin@example.com
+ *                 example: user1@example.com
  *               password:
  *                 type: string
- *                 example: admin123
+ *                 example: pass123
  *     responses:
  *       200:
- *         description: Login sukses, token dikembalikan.
+ *         description: Login sukses, access token di-generate.
  *         content:
  *           application/json:
  *             schema:
@@ -38,6 +38,6 @@ const { login } = require('../controllers/authController');
  *       401:
  *         description: Email atau password salah.
  */
-router.post('/login', login);
+router.post("/login", login);
 
 module.exports = router;

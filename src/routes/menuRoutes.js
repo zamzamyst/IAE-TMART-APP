@@ -6,8 +6,8 @@ const menuController = require("../controllers/menuController");
  * @swagger
  * /items:
  *   get:
- *     summary: Ambil daftar item/menu
- *     description: Mengambil semua data item yang tersedia di T-Mart.
+ *     summary: Lihat daftar item/menu
+ *     description: Mengambil semua data item/menu yang tersedia di Kantin T-Mart.
  *     responses:
  *       200:
  *         description: Daftar item berhasil diambil.
@@ -26,10 +26,10 @@ const menuController = require("../controllers/menuController");
  *                         example: 1
  *                       name:
  *                         type: string
- *                         example: Laptop
+ *                         example: Onigiri
  *                       price:
  *                         type: integer
- *                         example: 12000000
+ *                         example: 12000
  */
 
 router.get("/", menuController.getItems);
