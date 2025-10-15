@@ -18,7 +18,7 @@ const verifyToken = (req, res, next) => {
         console.log(
           `[${new Date().toISOString()}] PROFILE UPDATE FAILED: Token tidak valid`
         );
-        return res.status(403).json({ error: "Invalid token" });
+        return res.status(401).json({ error: "Invalid token" });
       }
     }
     req.user = user;

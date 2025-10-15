@@ -1,7 +1,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Proyek ini dirancang untuk memenuhi tugas minggu ke-4 mata kuliah Integrasi Aplikasi Enterprise. Proyek ini merupakan Sistem Informasi Sederhana dari Kantin T-Mart Gedung TULT, yang dibuat menggunakan ExpressJS dengan menerapkan konsep MVC sederhana. Proyek ini memiliki fitur utama (sesuai instruksi) yang dapat dijalankan melalui Postman, antara lain:
+Proyek ini dirancang untuk memenuhi tugas minggu ke-4 mata kuliah Integrasi Aplikasi Enterprise. Proyek ini merupakan Sistem Informasi Sederhana dari Kantin T-Mart Gedung TULT, yang dibuat menggunakan ExpressJS dengan menerapkan konsep MVC sederhana. Proyek ini memiliki fitur utama (sesuai instruksi) yang dapat dijalankan melalui Postman ataupun SwaggerUI, antara lain:
 
 1. Fitur Login User - `POST /auth/login` 
 2. Fitur Edit Profile User (wajib Token) - `PUT /profile`
@@ -63,6 +63,9 @@ Ada beberapa skenario yang harus anda lakukan pada proyek T-Mart ini (sesuai ins
     - Proses login telah berhasil dengan response `200 OK` dan output `access_token`
     - Lihat decode JWT melalui Console atau https://www.jwt.io/ (Opsional) 
 
+    Contoh Uji Postman:
+    ![Screenshot Postman](assets/skenario-login-1.png)
+
 2. Skenario 2 (Email sesuai & Password salah)
     - Buka request `POST` yang bernama `Login`
     - Sesuaikan URL dengan PORT milik anda
@@ -73,6 +76,9 @@ Ada beberapa skenario yang harus anda lakukan pada proyek T-Mart ini (sesuai ins
     - Jalankan request
     - Proses login gagal, dengan response `401 Unauthorized` beserta error message-nya
 
+    Contoh Uji Postman:
+    ![Screenshot Postman](assets/skenario-login-2.png)
+
 3. Skenario 3 (Email salah & Password sesuai)
     - Buka request `POST` yang bernama `Login`
     - Sesuaikan URL dengan PORT milik anda
@@ -82,6 +88,9 @@ Ada beberapa skenario yang harus anda lakukan pada proyek T-Mart ini (sesuai ins
     - Isi `password` dengan `pass123`
     - Jalankan request
     - Proses login gagal, dengan response `404 Not Found` beserta error message-nya
+
+    Contoh Uji Postman:
+    ![Screenshot Postman](assets/skenario-login-3.png)
 
 #### Skenario Edit Profile
 1. Skenario 1 (Token valid)
