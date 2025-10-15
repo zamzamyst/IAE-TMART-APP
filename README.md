@@ -3,9 +3,9 @@
 
 Proyek ini dirancang untuk memenuhi tugas minggu ke-4 mata kuliah Integrasi Aplikasi Enterprise. Proyek ini merupakan Sistem Informasi Sederhana dari Kantin T-Mart Gedung TULT, yang dibuat menggunakan ExpressJS dengan menerapkan konsep MVC sederhana. Proyek ini memiliki fitur utama (sesuai instruksi) yang dapat dijalankan melalui Postman, antara lain:
 
-1. Fitur Login User
-2. Fitur Edit Profile User (menggunakan Token)
-3. Fitur Lihat Daftar Menu (tanpa Token)
+1. Fitur Login User - `POST /auth/login` 
+2. Fitur Edit Profile User (wajib Token) - `PUT /profile`
+3. Fitur Lihat Daftar Menu (tanpa Token) - `GET /items`
 
 
 ### Cara Setup Environment
@@ -44,7 +44,7 @@ Untuk menjalankan proyek T-Mart ini melalui Postman, ada beberapa tahapan yang h
 2. Buka Postman
 3. Pilih menu `Import` di bagian Workspace
 4. Import file `JWT-Marketplace-API.postman_collection.json`
-5. Collection API siap digunakan
+5. Collection API siap digunakan, mencakup:
 
 
 ### Cara Menjalankan Program melalui Postman
@@ -73,7 +73,7 @@ Ada beberapa skenario yang harus anda lakukan pada proyek T-Mart ini (sesuai ins
     - Jalankan request
     - Proses login gagal, dengan response `401 Unauthorized` beserta error message-nya
 
-3. Skenario 3 (Email salah & Password salah)
+3. Skenario 3 (Email salah & Password sesuai)
     - Buka request `POST` yang bernama `Login`
     - Sesuaikan URL dengan PORT milik anda
     - Buka tab `Body`
