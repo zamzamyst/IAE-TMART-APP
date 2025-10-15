@@ -6,8 +6,17 @@ const verifyToken = (req, res, next) => {
   if (!authHeader) return res.status(401).json({ error: "No token provided" });
 
   const token = authHeader.split(' ')[1];
+
   jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-    if (err) return res.status(403).json({ error: "Invalid token" });
+    if (err) {
+      if (err.name === "TokenExpiredError") {
+        console.log(`[${new Date().toISOString()}] PROFILE UPDATE FAILED: Token sudah expired`);
+        return res.status(401).json({ error: "Token expired" }); 
+      } else {
+        console.log(`[${new Date().toISOString()}] PROFILE UPDATE FAILED: Token tidak valid`);
+        return res.status(403).json({ error: "Invalid token" });
+      }
+    }
     req.user = user;
     next();
   });

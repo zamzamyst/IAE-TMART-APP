@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/auth', authRoutes);
-app.use('/menus', menuRoutes);
+app.use('/items', menuRoutes);
 app.use('/profile', profileRoutes);
 
 module.exports = app;
