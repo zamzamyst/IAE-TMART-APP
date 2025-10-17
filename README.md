@@ -1,7 +1,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Proyek ini dirancang untuk memenuhi tugas minggu ke-4 mata kuliah Integrasi Aplikasi Enterprise. Proyek ini merupakan Sistem Informasi Sederhana dari Kantin T-Mart Gedung TULT, yang dibuat menggunakan ExpressJS dengan menerapkan konsep MVC sederhana. Proyek ini memiliki fitur utama (sesuai instruksi) yang dapat dijalankan melalui Postman ataupun SwaggerUI, antara lain:
+Proyek ini dirancang oleh Kelompok 3 untuk memenuhi Tugas 1 mata kuliah Integrasi Aplikasi Enterprise. Proyek ini merupakan Sistem Informasi Sederhana dari Kantin T-Mart Gedung TULT, yang dibuat menggunakan ExpressJS dengan menerapkan konsep MVC sederhana. Proyek ini memiliki fitur utama (sesuai instruksi) yang dapat dijalankan melalui Postman ataupun SwaggerUI, antara lain:
 
 1. Fitur Login User - `POST /auth/login` 
 2. Fitur Edit Profile User (wajib Token) - `PUT /profile`
